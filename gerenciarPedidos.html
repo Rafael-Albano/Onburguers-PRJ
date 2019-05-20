@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gerenciar Pedidos</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Niconne" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/gerenciarPedidos.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-dark bg-dark navbar-color">
+    <div class="navbar-brand navbar-position style-itens">
+      <h5 class="navbar-title">OnBurguers - Hamburgueria Gourmet</h5>
+    </div>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link link-color style-itens pedidos" href="#">Pedidos em Andamentos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-color style-itens encerrarPedidos" href="#">Encerrar Pedidos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-color style-itens" href="index.html">Sair</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <!-- LISTA OS PEDIDOS DOS CLIENTES -->
+  <nav class="container pedidos-mesas">
+    <h1 class="title-list">Pedidos em Andamentos</h1>
+    <ul class="list-group list-unstyled">
+      <div class="d-flex justify-content-around pedidos-estruturas">
+        <li>
+          <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#pedidoMesa1">
+            <span class="fas fa-clipboard-list icon-style"></span>
+            <h6>Mesa 1</h6>
+          </button>
+          <div class="modal fade" id="pedidoMesa1" tabindex="-1" role="dialog" aria-labelledby="pedidoMesa1-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pedidoMesa1-titulo">Pedidos - Mesa 1</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul class="list-group list-unstyled">
+                    <li>
+                      <p><span class="qntd-item">1 </span>Duplo onburguer picanha</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-success">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light btn-lg btnMesa2"data-toggle="modal" data-target="#pedidoMesa2">
+            <span class="fas fa-clipboard-list icon-style"></span>
+            <h6>Mesa 2</h6>
+          </button>
+          <div class="modal fade" id="pedidoMesa2" tabindex="-1" role="dialog" aria-labelledby="pedidoMesa2-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pedidoMesa2-titulo">Pedidos - Mesa 2</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body modalMesa2">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-success">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#pedidoMesa3">
+            <span class="fas fa-clipboard-list icon-style"></span>
+            <h6>Mesa 3</h6>
+          </button>
+          <div class="modal fade" id="pedidoMesa3" tabindex="-1" role="dialog" aria-labelledby="pedidoMesa3-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pedidoMesa3-titulo">Pedidos Mesa 3</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-success">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+
+      <div class="d-flex justify-content-around pedidos-estruturas">
+        <li>
+          <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#pedidoMesa4">
+            <span class="fas fa-clipboard-list icon-style"></span>
+            <h6>Mesa 4</h6>
+          </button>
+          <div class="modal fade" id="pedidoMesa4" tabindex="-1" role="dialog" aria-labelledby="pedidoMesa4-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pedidoMesa4-titulo">Pedidos Mesa 4</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-success">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#pedidoMesa5">
+            <span class="fas fa-clipboard-list icon-style"></span>
+            <h6>Mesa 5</h6>
+          </button>
+          <div class="modal fade" id="pedidoMesa5" tabindex="-1" role="dialog" aria-labelledby="pedidoMesa5-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pedidoMesa5-titulo">Pedidos Mesa 5</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-success">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#pedidoMesa6">
+            <span class="fas fa-clipboard-list icon-style"></span>
+            <h6>Mesa 6</h6>
+          </button>
+          <div class="modal fade" id="pedidoMesa6" tabindex="-1" role="dialog" aria-labelledby="pedidoMesa6-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pedidoMesa6-titulo">Pedidos Mesa 6</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-success">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+    </ul>
+  </nav>
+
+  <!--ENCERRA E CALCULA OS PEDIDOS DOS CLIENTES -->
+  <nav class="container encerrarPedidos-mesas">
+    <h1 class="title-list">Encerrar Pedidos</h1>
+    <ul class="list-group list-unstyled">
+      <div class="d-flex justify-content-around pedidos-estruturas">
+        <li>
+          <button type="button" class="btn btn-light btn-lg btnCalcMesa1" data-toggle="modal" data-target="#encerrarPedidoMesa1">
+            <span class="fas fa-calculator icon-style"></span>
+            <h6>Mesa 1</h6>
+          </button>
+          <div class="modal fade" id="encerrarPedidoMesa1" tabindex="-1" role="dialog" aria-labelledby="encerrarPedidoMesa1-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="encerrarPedidoMesa1-titulo">Pedidos - Mesa 1</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body modalMesa1">
+                  <table class="table table-dark table-sm table-striped table-bordered">
+                    <thead>
+                    <tr>
+                      <th scope="col">Qntd.</th>
+                      <th scope="col">Desc.</th>
+                      <th scope="col">Adicional</th>
+                      <th scope="col">Valor Adc.(R$)</th>
+                      <th scope="col">Valor Total(R$)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Onburguer duplo picanha</td>
+                        <td>Bacon Extra</td>
+                        <td>3.50</td>
+                        <td>15.00</td>
+                      </tr>
+
+                      <tr>
+                        <th colspan="4">Total(R$)</th>
+                      </tr>
+                    </tbody>
+
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Finalizar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light btn-lg btnCalcMesa2" data-toggle="modal" data-target="#encerrarPedidoMesa2">
+          <span class="fas fa-calculator icon-style"></span>
+          <h6>Mesa 2</h6>
+          </button>
+          <div class="modal fade" id="encerrarPedidoMesa2" tabindex="-1" role="dialog" aria-labelledby="encerrarPedidoMesa2-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="encerrarPedidoMesa2-titulo">Pedidos - Mesa 2</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body modalMesa2">
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Finalizar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#encerrarPedidoMesa3">
+            <span class="fas fa-calculator icon-style"></span>
+          <h6>Mesa 3</h6>
+          </button>
+          <div class="modal fade" id="encerrarPedidoMesa3" tabindex="-1" role="dialog" aria-labelledby="encerrarPedidoMesa3-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="encerrarPedidoMesa3-titulo">Pedidos Mesa 3</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Finalizar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+
+      <div class="d-flex justify-content-around pedidos-estruturas">
+        <li>
+          <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#encerrarPedidoMesa4">
+            <span class="fas fa-calculator icon-style"></span>
+          <h6>Mesa 4</h6>
+          </button>
+          <div class="modal fade" id="encerrarPedidoMesa4" tabindex="-1" role="dialog" aria-labelledby="encerrarPedidoMesa4-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="encerrarPedidoMesa4-titulo">Pedidos Mesa 4</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Finalizar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#encerrarPedidoMesa5">
+            <span class="fas fa-calculator icon-style"></span>
+          <h6>Mesa 5</h6>
+          </button>
+          <div class="modal fade" id="encerrarPedidoMesa5" tabindex="-1" role="dialog" aria-labelledby="encerrarPedidoMesa5-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="encerrarPedidoMesa5-titulo">Pedidos Mesa 5</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Finalizar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#encerrarPedidoMesa6">
+            <span class="fas fa-calculator icon-style"></span>
+          <h6>Mesa 6</h6>
+          </button>
+          <div class="modal fade" id="encerrarPedidoMesa6" tabindex="-1" role="dialog" aria-labelledby="encerrarPedidoMesa6-titulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="encerrarPedidoMesa6-titulo">Pedidos Mesa 6</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Finalizar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+    </ul>
+  </nav>
+</main>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script defer src="fontawesome/js/all.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script src="js/api.js"></script>
+<script src="js/listarPedidos.js"></script>
+<script src="js/encerrarPedidos.js"></script>
+</body>
+</html>

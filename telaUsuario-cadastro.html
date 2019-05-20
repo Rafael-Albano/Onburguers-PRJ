@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tela Gerenciamento</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Niconne" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/telaUsuario-cadastro.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-dark bg-dark navbar-color">
+    <div class="navbar-brand navbar-position style-itens">
+      <h5 class="navbar-title">OnBurguers - Hamburgueria Gourmet</h5>
+    </div>
+    <ul class="nav justify-content-end">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle link-color style-itens" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">Gerenciar Usuários</a>
+        <div class="dropdown-menu navbar-color-dropbox" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item link-color style-itens cadastrar" href="#">Cadastrar</a>
+          <a class="dropdown-item link-color style-itens alterar" href="#">Alterar</a>
+          <a class="dropdown-item link-color style-itens deletar" href="#">Deletar</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-color style-itens" href="gerenciarPedidos.html">Gerenciar Pedidos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-color style-itens" href="gerenciarProdutos.html">Gerenciar Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-color style-itens" href="#">Sair</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!-- CADASTRAR USUÁRIO NO SISTEMA -->
+<form class="container formEstrutura" id="formCadastro">
+  <h2>Cadastrar - Usuário</h2>
+  <span id="message"></span>
+  <div class="form-row">
+    <div class="col-auto">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+    </div>
+
+    <div class="col-auto">
+      <label for="email-novoUsuario">Email:</label>
+      <input type="email" class="form-control" id="email-novoUsuario" placeholder="seu@email.com" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-auto">
+      <label for="matricula">Matrícula:</label>
+      <input type="number" class="form-control" id="matricula" placeholder="Insira sua matrícula" required>
+    </div>
+
+    <div class="col-auto">
+      <label for="cargo-novoUsuario">Função:</label>
+      <input type="text" class="form-control" id="cargo-novoUsuario" placeholder="Função Exercida" required>
+    </div>
+  </div>
+  <fieldset class="verificarPassword">
+    <div class="form-row">
+      <div class="col-auto">
+        <label for="senha">Nova Senha:</label>
+        <input type="password" class="form-control" id="senha" placeholder="Insira uma nova senha" required>
+      </div>
+
+      <div class="col-auto">
+        <label for="confirmaSenha">Confirmar Senha:</label>
+        <input type="password" class="form-control" id="confirmaSenha" placeholder="Repita a senha" required>
+      </div>
+    </div>
+    <div class="form-row flex-row-reverse">
+      <div class="col-auto">
+        <button class="btn btn-success estilo-botao salvarCadastro" type="submit">Salvar</button>
+      </div>
+
+      <div class="col-auto">
+        <button class="btn btn-danger estilo-botao botao-fechar" type="button">Cancelar</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<!-- ALTERAR, DELETAR USUÁRIOS -->
+<div class="container tabela-estrutura">
+  <h1 class="title-table">Alterar dados dos Usuários</h1>
+  <table class="table table-bordered border-table">
+    <thead>
+      <tr>
+        <th scope="col">Matrícula</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Função</th>
+        <th scope="col">Email</th>
+        <th scope="col">Remover</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>123355</td>
+        <td>Rafael</td>
+        <td>Sub-Gerente</td>
+        <td>rafael.albano88@gmail.com</td>
+        <td>
+          <a href="#" class="icone-remover">
+            <i class="fas fa-trash-alt delete-style"></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <form class="form-inline buscar-estrutura">
+    <label for="filtrar-tabela" class="sr-only" aria-label="buscar">Buscar:</label>
+    <input type="text" name="filtro" id="filtrar-tabela" class="form-control" placeholder="Matrícula Usuário" required>
+    <button type="submit" class="btn btn-primary btn-buscar"><span class="fas fa-search"></span></button>
+  </form>
+
+  <div class="position-botao">
+    <button class="btn btn-danger estilo-botao-tabela botao-fechar" type="button">Cancelar</button>
+  </div>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script defer src="fontawesome/js/all.js"></script>
+<script src="js/cadastroUsuario.js"></script>
+<script src="js/tabelaUsuarios.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script src="js/api.js"></script>
+</body>
+</html>

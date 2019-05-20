@@ -1,0 +1,56 @@
+body {
+    background-image: url("../img/batataRustica.jpg");
+}
+
+
+/*
+.boxlogin a {
+    display: block;
+    padding-top: 1em;
+    text-align: center;
+    text-decoration: underline;
+}*/
+
+.boxlogin {
+    margin: 3% auto auto;
+}
+
+.boxlogin {
+    display: flex;
+    width: 40%;
+    height: 30%;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    flex-shrink: 0;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 2%;
+}
+
+.boxlogin img {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #5E5E5E;
+    border-radius: 50px 50px;
+    margin-bottom: 6px;
+}
+
+.boxlogin h1{
+    color: #FFF;
+    text-align: center;
+    padding-bottom: .5em;
+    font-size: 30px;
+}
+
+.box-input {
+    color: #FFF;
+    border: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.boxlogin p{
+    color: #9acfea;
+    text-align: justify;
+}
+

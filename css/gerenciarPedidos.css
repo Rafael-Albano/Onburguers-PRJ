@@ -1,0 +1,44 @@
+body {
+    background-image: url("../img/batataRustica.jpg");
+}
+
+.navbar-color {
+background-color: rgba(17, 144, 231, .8)!important;
+}
+
+.navbar-title, .style-itens{
+    color: #730202;
+    
+}
+
+.style-itens {
+    font-size: 1.6rem;
+}
+
+.icon-style {
+    font-size: 3rem;
+}
+
+.title-list {
+    font-family: 'Niconne', cursive,"sans-serif";
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 4rem;
+}
+
+.pedidos-estruturas {
+    margin-top: 30px;
+}
+
+.qntd-item {
+    font-weight: bold;
+}
+
+.pedidos-mesas {
+    display: none;
+}
+
+.encerrarPedidos-mesas {
+   display: none;
+}

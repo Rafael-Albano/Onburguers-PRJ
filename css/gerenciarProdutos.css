@@ -1,0 +1,23 @@
+body {
+    background-image: url("../img/onburguer1.jpg");
+}
+
+.formEstrutura {
+    height: 72%;
+    margin-top: 2%;
+    color: rgba(17, 144, 231, .6);
+}
+
+.img-produto {
+    width: 80px;
+    height: 80px;
+}
+
+.tabela-estrutura {
+    margin-top: 2.5%;
+    width: 70%;
+}
+
+.estilo-botao {
+    margin-right: 4%;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Login Usuários</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Niconne" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/rodape-principal.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-light bg-light navbar-color">
+        <div class="navbar-brand navbar-position style-itens">
+          <h5 class="navbar-title">OnBurguers - Hamburgueria Gourmet</h5>
+        </div>
+
+        <form id="formLoginSenha">
+          <table class="table-sm">
+            <thead>
+              <tr class="style-itens">
+                <th><label for="email-user">Email:</label></th>
+                <th><label for="pwd-user">Senha:</label></th>
+              </tr>
+            </thead>
+            <tbody>
+            <td class="posiciona-elementos">
+              <input id="email-user" class="form-control mr-sm-2" name="email-usuario" type="email" placeholder="seu@email.com" required autofocus>
+            </td>
+            <td class="posiciona-elementos">
+              <input id="pwd-user" class="form-control mr-sm-2" name="senha-usuario" type="password" placeholder="Digite sua senha" required>
+            </td>
+            <td class="posiciona-elementos">
+              <button class="btn btn-sm btn-outline-primary my-2 my-sm-0 style-itens botao-entrar" type="submit">Entrar</button>
+            </td>
+            <tr>
+              <td></td>
+              <td class="style-itens"><a href="#validaEmailServidor" class="text-decoration-none esqueceu-senha">Esqueceu a senha?</a></td>
+            </tr>
+            </tbody>
+          </table>
+        </form>
+      </nav>
+    </header>
+
+    <div>
+      <!-- INSERIR LOGO -->
+    </div>
+
+
+    <form id = formRedefinirSenha>
+      <div class="container formEstrutura">
+        <h2>Redefinir Senha</h2>
+        <span id="message"></span>
+        <div class="form-row">
+          <div class="col-auto">
+          <label for="validaEmailServidor">Email</label>
+          <input type="email" class="form-control" id="validaEmailServidor" name="email" placeholder="seu@email.com" required>
+          </div>
+        </div>
+        <fieldset class="verificarPassword">
+          <div class="form-row">
+              <div class="col-auto">
+                <label for="novaSenhaUsuario">Nova Senha:</label>
+                <input type="password" class="form-control" id="novaSenhaUsuario" name="nova-senha" placeholder="Insira uma nova senha" required>
+              </div>
+
+              <div class="col-auto">
+                <label for="confirmaSenha">Confirmar Senha:</label>
+                <input type="password" class="form-control" id="confirmaSenha" name="confirma-nova-senha" placeholder="Repita a senha" required>
+              </div>
+            </div>
+
+            <button class="btn btn-success btn-block estilo-botao botao-salvar" type="submit">Salvar</button>
+            <button class="btn btn-danger btn-block estilo-botao botao-cancelar" type="button">Cancelar</button>
+        </fieldset>
+      </div>
+    </form>
+
+
+    <footer class="rodape-principal">
+      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </footer>
+
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/enviaDados.js"></script>
+    <script src="js/redefinirSenha.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/authentication.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gerenciar Produtos</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Niconne" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/telaUsuario-cadastro.css">
+  <link rel="stylesheet" href="css/gerenciarProdutos.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-dark bg-dark navbar-color">
+    <div class="navbar-brand navbar-position style-itens">
+      <h5 class="navbar-title">OnBurguers - Hamburgueria Gourmet</h5>
+    </div>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link link-color style-itens cadastrar" href="#">Cadastrar Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-color style-itens alterar" href="#">Alterar/Deletar Produtos</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link link-color style-itens" href="index.html">Sair</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<form class="container formEstrutura formCadProd">
+  <h2>Cadastrar Novos Produtos</h2>
+  <fieldset class="form-group">
+    <label for="upload-arquivo">Imagem: </label>
+    <input type="file" class="form-control-file" id="upload-arquivo" name="upar-arquivo">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="nome-produto">Nome:</label>
+    <input type="text" id="nome-produto" class="form-control" name="nomeProd" placeholder="Digite o nome do Produto" required>
+  </fieldset>
+  <fieldset>
+    <label for="descricao-produto">Descrição: </label>
+    <textarea id="descricao-produto" class="form-control" rows="3"></textarea>
+  </fieldset>
+  <fieldset>
+    <label for="valor-produto">Preço:</label>
+    <input type="text" id="valor-produto" class="form-control" name="valorProd" placeholder="Insira o valor do Produto" required>
+  </fieldset>
+  <div class="form-inline">
+    <button type="submit" class="btn btn-primary mb-2 estilo-botao">Confirmar</button>
+    <button type="button" class="btn btn-danger mb-2 estilo-botao btn-cancel">Cancelar</button>
+  </div>
+</form>
+
+<div class="container tabela-estrutura tableAltProd">
+  <h2 class="title-table">Alterar dados dos Usuários</h2>
+  <table class="table table-bordered border-table table-sm">
+    <thead>
+    <tr>
+      <th scope="col">IMG</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Valor(R$)</th>
+      <th scope="col">Deletar</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><img src="#" class="img-produto"></td>
+      <td>OnBurguer Duplo Picanha</td>
+      <td>
+        <p>
+          Duplo picanha grelhada com barbeacue,alface,molho especial,cebola,
+          azeitona, etc...
+        </p>
+      </td>
+      <td>17.80</td>
+      <td><span class="fas fa-trash-alt delete-style"></span></td>
+    </tr>
+    </tbody>
+  </table>
+  <form class="form-inline buscar-estrutura">
+    <label for="filtrar-tabela" class="sr-only" aria-label="buscar">Buscar:</label>
+    <input type="text" name="filtro" id="filtrar-tabela" class="form-control" placeholder="Nome Produto" required>
+    <button type="submit" class="btn btn-primary btn-buscar"><span class="fas fa-search"></span></button>
+  </form>
+
+</div>
+
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script defer src="fontawesome/js/all.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script src="js/api.js"></script>
+<script src="js/cadastrarProdutos.js"></script>
+<script src="js/alterarProduto.js"></script>
+</body>
+</html>

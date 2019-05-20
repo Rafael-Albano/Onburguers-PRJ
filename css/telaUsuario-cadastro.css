@@ -1,0 +1,114 @@
+body {
+    background-image: url("../img/onburguer.jpg");
+
+}
+
+.navbar-color,.navbar-color-dropbox {
+    background-color: rgba(17, 144, 231, .6) !important;
+}
+
+.link-color {
+    color: #FFF;
+}
+
+.formEstrutura h2,
+label{
+    color: #FFF;
+}
+
+.formEstrutura {
+    width: 38%;
+    height: 53%;
+    background-color: rgba(0, 0, 0, .6);
+    color: black;
+    border: 5px solid #6c757d;
+    margin-top: 6%;
+    position: relative;
+    display: none;
+}
+
+.formEstrutura label {
+    font-weight: bold;
+}
+
+.estilo-botao {
+    margin-top: 20px;
+}
+
+.tabela-estrutura th,
+td {
+    background-color: rgba(0, 0, 0, .6);
+
+}
+
+.title-table,
+.tabela-estrutura,
+th, td{
+    color: #FFF;
+}
+
+.title-table {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.tabela-estrutura {
+    width: 53%;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+    display: none;
+
+}
+
+.tabela-estrutura label {
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.border-table {
+    border: 3px solid white;
+}
+
+.style-itens {
+    font-size: 1.4rem;
+}
+
+.buscar-estrutura {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.delete-style {
+    font-size: 2rem;
+    color: rgb(242, 202, 4);
+    text-align: center;
+}
+
+.btn-buscar {
+    margin-left: -4px !important;
+}
+
+.delete-style {
+    margin-left: 30%;
+}
+
+#message {
+    color: red;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    display: inherit;
+}
+
+.estilo-botao-tabela {
+    margin-bottom: 20px;
+    margin-left: 87%;
+}
+
+
+@media(max-width: 1280px) {
+    .formEstrutura{
+        width: 43%;
+        height: 53%;
+    }
+}
